@@ -58,10 +58,10 @@ RUN set -x;\
 # Install Odoo
 COPY ./odoo_12.0+e.latest_all.deb /
 RUN set -x; \
-        dpkg --force-depends -i /odoo.deb \
+        dpkg --force-depends -i /odoo_12.0+e.latest_all.deb \
         && apt-get update \
         && apt-get -y install -f --no-install-recommends \
-        && rm -rf /var/lib/apt/lists/* /odoo.deb
+        && rm -rf /var/lib/apt/lists/* /odoo_12.0+e.latest_all.deb
 
 # Copy entrypoint script and Odoo configuration file
 RUN pip3 install num2words xlwt
