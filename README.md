@@ -14,4 +14,4 @@ If you need to run 2 (or more) setups with different versions (or not) just edit
 * PORT_PREFIX
 * ODOO_MODULES
 
-Note: If you need to develop two parallell systems on the same code base (same repo) you need to work on two seperate folders containing the same repo.
+Note: If you need to develop two parallell systems on the same code base (same repo) you might want to work on two seperate folders containing the same repo.
